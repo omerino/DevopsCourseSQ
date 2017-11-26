@@ -1,0 +1,13 @@
+#! /usr/bin/python3                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                      
+from __future__ import print_function                                                                                                                                                                                                 
+                                                                                                                                                                                                                                      
+lst = []                                                                                                                                                                                                                              
+while True:                                                                                                                                                                                                                           
+    names = input (":")                                                                                                                                                                                                               
+    lst.append(names)                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                      
+    if names=('n')                                                                                                                                                                                                                    
+    print (lst.pop[0])                                                                                                                                                                                                                
+                        
+
