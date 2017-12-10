@@ -1,0 +1,6 @@
+---
+- hosts: myservers
+  become: true
+  tasks:
+    - name: print out alias
+    - debug: msg= "alias is {{alias}}"

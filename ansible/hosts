@@ -43,6 +43,6 @@
 ## db-[99:101]-node.example.com
 #
 [myservers]
-node1 ansible_host=10.0.0.96
-node2 ansible_host=10.0.0.141
+node1 ansible_host=srv1=10.0.0.96 alias=srv1
+node2 ansible_host=10.0.0.141 alias=srv2
 
