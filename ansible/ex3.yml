@@ -1,0 +1,22 @@
+---
+- hosts: myservers
+  become: true
+  tasks:
+    - name: install ntp
+      yum:
+        name: ntp
+        state: latest
+
+    - name: copy ntp config
+      copy:
+        src: ntp.conf
+        dest: /etc/ntp.conf
+      notify:
+        - restart_ntp
+
+  handlers:
+    - name: restart_ntp
+      service:
+        name: ntpd
+        state: restarted      
+        
