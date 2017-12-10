@@ -1,0 +1,16 @@
+---
+- hosts: servers
+  become: true
+  tasks:
+        - name: get date and time from servers group
+          command: date
+
+        - name: get date and time from servers group
+          command: hostname
+
+        - name: fetch hosts file entries from servers group
+          fetch: src=/etc/hosts dest=allhosts
+
+        - name: verify syslog is started
+          service: name=syslog state=enabled
+
